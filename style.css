@@ -1,0 +1,16 @@
+.sketchPad{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    border-style: solid;
+}
+
+.grid{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.tile{
+    height: 100%;
+    border-color: black;
+}

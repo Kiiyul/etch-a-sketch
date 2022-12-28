@@ -1,16 +1,43 @@
+body{
+    background-color: turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    padding-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.newGrid{
+    font-size: 20px;
+}
+
+.rainbow{
+    font-size: 20px;
+}
+
 .sketchPad{
     height: 500px;
     width: 500px;
     display: flex;
     border-style: solid;
+    border-color: red;
+    border-width: 50px;
 }
 
 .grid{
     display: flex;
     flex: 1;
     flex-direction: column;
+    background-color: white;
 }
 .tile{
     height: 100%;
-    border-color: black;
+    
 }

@@ -25,13 +25,15 @@ function resetGrid() {
         sketchPad.removeChild(grid))
     if (userChoice >= 1 && userChoice <= 100) {
         createNewGrid(userChoice);
-    }     
+    } else{
+        do {userChoice = prompt('Invalid entry! Please try again')
+    } 
+    while( userChoice < 1 || userChoice > 100);
+    createNewGrid(userChoice);
+    }
 }
 
 const newGrid =document.querySelector('.newGrid');
 newGrid.addEventListener('click', resetGrid)
 
 createNewGrid(16);
-
-
-
